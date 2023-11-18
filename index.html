@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>БЭМ</title>
+</head>
+<body>
+   <!--Блок .btn по методологиии БЭМ-->
+      <button class="btn">Кнопка</button>
+<!--Блок .raiting по методологиии БЭМ-->
+<!--Элемент .raiting__star по методологиии БЭМ, обязательно два нижних подчеркивания-->
+      <div class="raiting">
+         <img class="raiting__star" src="./img/star-yellow.svg" alt="Рейтинг 4 из 5">
+         <img class="raiting__star" src="./img/star-yellow.svg" alt="">
+         <img class="raiting__star" src="./img/star-yellow.svg" alt="">
+         <img class="raiting__star" src="./img/star-yellow.svg" alt="">
+         <img class="raiting__star" src="./img/star-gray.svg" alt="">
+      </div> 
+
+
+      <!--Блок .card по методологиии БЭМ-->
+      <!--Элемент .card__img блока .card по методологиии БЭМ-->
+      <!--Элемент .card__price-rating блока .card  по методологии БЭМ-->
+      <!--Элемент .card__title блока .card по методологии БЭМ-->
+      <!--Элемент .card__location блока .card по методологии БЭМ-->
+      <!--Элемент .card__price блока .card по методологии БЭМ-->
+      <!--Новый элемент блока .card__raiting блока .card по методологии БЭМ-->
+      <div class="card">
+         <img class="card__img" src="./img/1.jpg" alt="Bon restourant">
+         <div class="card__body">
+            <div class="card__price-rating">
+               <strong class="card__price">5000 руб</strong>
+
+               <!--Копирую верхний блок, методология БЭМ позволяет -->
+               <div class="raiting card__raiting">
+                  <img class="raiting__star" src="./img/star-yellow.svg" alt="Рейтинг 4 из 5">
+                  <img class="raiting__star" src="./img/star-yellow.svg" alt="">
+                  <img class="raiting__star" src="./img/star-yellow.svg" alt="">
+                  <img class="raiting__star" src="./img/star-yellow.svg" alt="">
+                  <img class="raiting__star" src="./img/star-gray.svg" alt="">
+               </div> 
+
+               <!--Новый элемент блока .card__btn блока .card по методологии БЭМ-->
+            </div>
+            <h3 class="card__title">Bon restourant</h3>
+            <span class="card__location">Париж, Франция</span>
+            <button class="btn card__btn">Забронировать</button>
+         </div>
+
+      </div>
+         
+   
+</body>
+</html>
